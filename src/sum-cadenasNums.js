@@ -1,13 +1,13 @@
-function SumCadenasDeNums(cadena)
+function SumCadenasDeNums(cadenaDeNums)
 {
     let SumatoriaCadenas = 0;
-    if(cadena.length > 1){
-        let num1 = + cadena[0];
-        let num2 = +cadena[2];
-        SumatoriaCadenas = num1 + num2;
-    }
-    else{
-        SumatoriaCadenas += +cadena;
+    for(let i =0;i<cadenaDeNums.length;i++){
+        if(cadenaDeNums[i]==","){
+            SumatoriaCadenas+=0;
+        }
+        else{
+            SumatoriaCadenas +=+cadenaDeNums[i];
+        }
     }
     return SumatoriaCadenas;
 }
