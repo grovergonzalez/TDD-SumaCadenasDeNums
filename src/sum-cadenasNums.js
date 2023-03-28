@@ -1,6 +1,8 @@
 function SumCadenasDeNums(cadena)
 {
-    return 0;
+    let SumatoriaCadenas = 0;
+    SumatoriaCadenas += +cadena;
+    return SumatoriaCadenas;
 }
 
 export default SumCadenasDeNums;
